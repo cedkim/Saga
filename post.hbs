@@ -34,6 +34,9 @@
                         <p class="date">{{t "Posted by"}} {{#primary_author}}<span class="author">{{name}}</span>{{/primary_author}} <time class="timesince" datetime="{{date format='YYYY-MM-DDTHH:mm'}}" title="{{date format='YYYY-MM-DD HH:mm'}}">{{date published_at timeago='true'}}</time></p>
                         <p class="post--read-time">{{reading_time minute=(t "1 min read") minutes=(t "% min read")}}</p>
                     </div>
+                    <div id="replybox"></div>
+                    <script>window.replybox = {site: 'g4dnk6lYxX'};</script>
+                    <script src="https://cdn.getreplybox.com/js/embed.js"></script>
                 </div>
             </a>
         {{/next_post}}
